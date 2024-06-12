@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab" , sans-serif;
+}
+
+
+body {
+    background-image: url("/images/0fb195fca67bfe8c1165cf59cc7de74eb6962daa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -28%;  /* change it later */
+}
+
+.header {
+    width: 60%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.heading {
+    font-size: 40px;
+    color: rgb(44, 74, 100);
+    font-weight: bold;
+}
+
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time span {
+    font-size: 85px;
+    color: rgb(44, 74, 100);
+    font-weight: bold;
+}
+
+.time p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    color: rgba(44, 74, 100, 1);
+    margin-top: -10px;
+}
+
+/* Add Reponsive */
