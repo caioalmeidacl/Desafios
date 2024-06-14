@@ -96,16 +96,17 @@ body {
 
 
 /* navigation */
-
 ul {
     list-style: none;
+}
+#nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-li{
+#nav ul li{
     display: flex;
     margin: 10px auto;
     align-items: center;
@@ -113,18 +114,18 @@ li{
     padding: 10px;
 }
 
-li:hover, .logout:hover {
+#nav ul li:hover, .logout:hover {
     background-color: var(--light);
     cursor: pointer;
 }
 
-ul img, .logout img {
+#nav ul img, .logout img {
     margin-right: 12px;
     width: 32px;
     height: 32px;
 }
 
-ul p, .logout p {
+#nav ul p, .logout p {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: var(--light-purple);
@@ -137,4 +138,117 @@ ul p, .logout p {
     padding: 10px;
     margin-bottom: 25px;
     margin-left: 15px;
+}
+
+/* Page */
+
+#page {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 80px;
+    background-color: #FFFFFF;
+}
+
+/* header page */
+
+.header {
+    margin-top: -80px ;
+    /* border: 1px solid; */
+    width: 50%;
+}
+
+.header h1 {
+    color: #1A194D;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+}
+
+h2,h3  {
+    color: #1A194D;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-weight: medium;
+    width: 70%;
+    margin: 0 25px;
+}
+
+.header p, .payment p {
+    color: var(--light-purple);
+    font-size: 14px;
+    font-weight: medium;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Bills */
+.bills {
+    /* border: 1px solid; */
+    width: 60%;
+}
+
+.bills ul {
+    margin-bottom: 30px;
+}
+.bills a {
+    color: var(--light-orange);
+
+}
+.label {
+    width: 92.3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label p {
+    color: var(--light-purple);
+    font-size: 14px;
+    font-weight: medium;
+    font-family: "Poppins", sans-serif;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 10px;
+}
+.info p, .button  {
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: medium;
+    font-family: "Poppins", sans-serif;
+}
+
+.button {
+    width: 114px;
+    height: 40px;
+    background-color: inherit;
+    border-radius: 8px;
+    box-shadow: none;
+    border: inherit;
+    cursor: pointer;
+}
+
+/* Payment */
+
+.payment {
+    /* border: 1px solid; */
+    width: 60%;
+}
+
+
+.method-payment {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
